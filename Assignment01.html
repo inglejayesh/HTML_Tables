@@ -12,7 +12,7 @@ var lname = document.getElementById('lname').value;
 var city = document.getElementById('city').value;
 var country = document.getElementById('country').value;
 // getting table by ID
-var table = document.getElementsById('mytable');
+var table = document.getElementsByTagName('table')[0];
 // adding new empty row to the table
 // 0 = in the top 
 // table.rows.length = the end
@@ -36,7 +36,7 @@ var fname = document.getElementById('fname').value;
 var lname = document.getElementById('lname').value;
 var city = document.getElementById('city').value;
 var country = document.getElementById('country').value;
-var table = document.getElementsById('mytable');
+var table = document.getElementsByTagName('table')[0];
 var newRow = table.insertRow(table.rows.length);
 var cel1 = newRow.insertCell(0);
 var cel2 = newRow.insertCell(1);
