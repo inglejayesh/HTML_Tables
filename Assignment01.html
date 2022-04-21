@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Assignment 01</title>
+<script>
+
+function addRowTop()
+{
+// getting input values  
+var fname = document.getElementById('fname').value;
+var lname = document.getElementById('lname').value;
+var city = document.getElementById('city').value;
+var country = document.getElementById('country').value;
+// getting table by ID
+var table = document.getElementsById('mytable');
+// adding new empty row to the table
+// 0 = in the top 
+// table.rows.length = the end
+// table.rows.length/2+1 = the center
+var newRow = table.insertRow(1);
+// adding cells to the row
+var cel1 = newRow.insertCell(0);
+var cel2 = newRow.insertCell(1);
+var cel3 = newRow.insertCell(2);
+var cel4 = newRow.insertCell(3);
+// adding values to the cells
+cel1.innerHTML = fname;
+cel2.innerHTML = lname;
+cel3.innerHTML = city;
+cel4.innerHTML = country;
+}
+            
+function addRowBottom()
+{
+var fname = document.getElementById('fname').value;
+var lname = document.getElementById('lname').value;
+var city = document.getElementById('city').value;
+var country = document.getElementById('country').value;
+var table = document.getElementsById('mytable');
+var newRow = table.insertRow(table.rows.length);
+var cel1 = newRow.insertCell(0);
+var cel2 = newRow.insertCell(1);
+var cel3 = newRow.insertCell(2);
+var cel4 = newRow.insertCell(3);
+cel1.innerHTML = fname;
+cel2.innerHTML = lname;
+cel3.innerHTML = city;
+cel4.innerHTML = country;
+}
+</script>
+</head>
+
+<body>
+<h1> Assignment Number 01 :</h1>
+First Name: <input type="text" name="fname" id="fname" /><br/><br/>
+Last Name: <input type="text" name="lname" id="lname" /><br/><br/>
+City: <input type="text" name="city" id="city" /><br/><br/>
+Country: <input type="text" name="country" id="country" /><br/><br/>
+<button onclick="addRowTop();">Add Row at Top</button>
+<button onclick="addRowBottom();">Add Row at Bottom</button><br/><br/>
+
+<table id="mytable" border="1">          
+<tr>
+<th>First Name</th>
+<th>Last Name</th>
+<th>City</th>
+<th>Country</th>
+</tr>            
+</table>
+
+</body>
+</html>
