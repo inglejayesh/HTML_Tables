@@ -3,25 +3,29 @@
 }
 
 body {
-	background-color: #9b59b6;
+	background-color: #807d7d;
 	font-family: 'Open Sans', sans-serif;
 	align-items: center;
 	justify-content: center;
-	min-height: 100vh;
 	margin: 0;
 	margin-bottom: 10px;
 	padding-bottom: 20px;
 	position: relative;
-	padding: 30px 40px;	
+	padding: 20px 30px;	
 	color: #fff;
 }
 h1{
 	margin: 0%;
 }
+table{
+    border-spacing: 0px;
+	border : 2px #201b22;
+}
 
 label {
 	display: inline-block;
-	margin-bottom: 5px;
+	margin-bottom: 3px;
+	font-size: 14px;
 }
 input {
 	border: 2px solid #f0f0f0;
@@ -29,35 +33,48 @@ input {
 	display: block;
 	font-family: inherit;
 	font-size: 14px;
-	padding: 10px;
-	width: 35%;
+	padding: 0 5px;
+	width: 404px;
 }
 
+small {
+	margin-left: 10px;
+}
 button {
-	background-color: #8e44ad;
-	border: 2px solid #8e44ad;
+	background-color: #201b22;
+	border: 2px solid #201b22;
 	border-radius: 4px;
 	color: #fff;
 	
 	font-family: inherit;
-	font-size: 16px;
-	padding: 10px;
+	font-size: 14px;
+	padding: 5px;
 	margin-top: 20px;
-	width: 17.50%;
+	width: 200px;
+	margin-top: 10px;
 }
 
-#errorInFname{
+.errorMsg{
 	color: red;
 }
 
-#errorInLname{
-	color: red;
+.inputContrl{
+	display: flex;
 }
 
-#errorInCity{
-	color: red;
+
+th, td {
+	width: 150px;
+	max-width: 20%;
+	word-break: break-all;
+	word-wrap: break-word;
+	padding: 0 4px;
 }
 
-#errorInCountry{
-	color: red;
+tr {
+	width: 100px;
+}
+tr th:first-child, tr td:first-child {
+	width: 60px;
+	text-align: center;
 }
