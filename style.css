@@ -1,9 +1,9 @@
 * {
 	box-sizing: border-box;
 }
-
+/*css for body*/
 body {
-	background-color: #807d7d;
+	background-color: #e0dcdc;
 	font-family: 'Open Sans', sans-serif;
 	align-items: center;
 	justify-content: center;
@@ -12,57 +12,16 @@ body {
 	padding-bottom: 20px;
 	position: relative;
 	padding: 20px 30px;	
-	color: #fff;
 }
-h1{
-	margin: 0%;
+h3{
+	margin-top: 0%;
 }
+
+/*tables css*/
 table{
     border-spacing: 0px;
-	border : 2px #201b22;
+	border : 2px #0077bf;
 }
-
-label {
-	display: inline-block;
-	margin-bottom: 3px;
-	font-size: 14px;
-}
-input {
-	border: 2px solid #f0f0f0;
-	border-radius: 4px;
-	display: block;
-	font-family: inherit;
-	font-size: 14px;
-	padding: 0 5px;
-	width: 404px;
-}
-
-small {
-	margin-left: 10px;
-}
-button {
-	background-color: #201b22;
-	border: 2px solid #201b22;
-	border-radius: 4px;
-	color: #fff;
-	
-	font-family: inherit;
-	font-size: 14px;
-	padding: 5px;
-	margin-top: 20px;
-	width: 200px;
-	margin-top: 10px;
-}
-
-.errorMsg{
-	color: red;
-}
-
-.inputContrl{
-	display: flex;
-}
-
-
 th, td {
 	width: 150px;
 	max-width: 20%;
@@ -77,4 +36,44 @@ tr {
 tr th:first-child, tr td:first-child {
 	width: 60px;
 	text-align: center;
+}
+
+/*button,labels and inputs*/
+input {
+	border: 2px solid #0077bf;
+	border-radius: 4px;
+	display: block;
+	font-family: inherit;
+	font-size: 14px;
+	padding: 0 5px;
+	width: 404px;
+}
+.inputContrl{
+	display: flex;
+}
+button {
+	background-color: #0077bf;
+	border: 2px solid #0077bf;
+	border-radius: 4px;
+	color: #fff;
+	
+	font-family: inherit;
+	font-size: 14px;
+	padding: 5px;
+	margin-top: 20px;
+	width: 200px;
+	margin-top: 10px;
+}
+label {
+	display: inline-block;
+	margin-bottom: 3px;
+	font-size: 14px;
+}
+
+/*error msgs css*/
+small {
+	margin-left: 10px;
+}
+.errorMsg{
+	color: red;
 }
